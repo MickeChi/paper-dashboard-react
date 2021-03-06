@@ -30,35 +30,33 @@ import {
   Button,
 } from "reactstrap";
 
-class Tables extends React.Component {
+class Catalogos extends React.Component {
   render() {
     return (
       <>
         <div className="content">
           <Row>
-            <Col md="12">
+            <Col md="6">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h4">Listas Creadas  </CardTitle>
-                  <Button color="primary">
-                    <i className="fa fa-plus"> </i>&nbsp;Nueva Lista
+                  <CardTitle tag="h4">Tiendas </CardTitle>
+                  <Button size="sm" color="primary">
+                    <i className="fa fa-plus"> </i>&nbsp;Nueva Tienda
                   </Button>
                 </CardHeader>
                 <CardBody>
                   <Table responsive>
                     <thead className="text-primary">
                       <tr>
-                        <th>Nombre</th>
-                        <th>Cantidad Reactivos</th>
-                        <th>Grupo</th>
+                        <th>Id</th>
+                        <th>Tienda</th>
                         <th className="text-right">Opciones</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Lista 1</td>
-                        <td>20</td>
-                        <td>Salud</td>
+                        <td>1</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -72,9 +70,8 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Lista 2</td>
-                        <td>14</td>
-                        <td>Salud</td>
+                        <td>2</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -88,9 +85,8 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Lista 3</td>
-                        <td>24</td>
-                        <td>Orden</td>
+                        <td>3</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -104,9 +100,8 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Lista 4</td>
-                        <td>17</td>
-                        <td>Orden</td>
+                        <td>4</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -120,9 +115,8 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Lista 5</td>
-                        <td>25</td>
-                        <td>Mantenimiento</td>
+                        <td>5</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -136,9 +130,8 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Lista 6</td>
-                        <td>10</td>
-                        <td>Mantenimiento</td>
+                        <td>6</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -152,9 +145,8 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Lista 7</td>
-                        <td>15</td>
-                        <td>Mantenimiento</td>
+                        <td>7</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -168,9 +160,8 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Lista 8</td>
-                        <td>20</td>
-                        <td>Salud</td>
+                        <td>8</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -184,9 +175,8 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
-                        <td>Lista 9</td>
-                        <td>20</td>
-                        <td>Salud</td>
+                        <td>9</td>
+                        <td>Tienda 1</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -205,72 +195,7 @@ class Tables extends React.Component {
                 </CardBody>
               </Card>
             </Col>
-            {/*<Col md="12">
-              <Card className="card-plain">
-                <CardHeader>
-                  <CardTitle tag="h4">Table on Plain Background</CardTitle>
-                  <p className="card-category">
-                    Here is a subtitle for this table
-                  </p>
-                </CardHeader>
-                <CardBody>
-                  <Table responsive>
-                    <thead className="text-primary">
-                      <tr>
-                        <th>Name</th>
-                        <th>Country</th>
-                        <th>City</th>
-                        <th className="text-right">Salary</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Dakota Rice</td>
-                        <td>Niger</td>
-                        <td>Oud-Turnhout</td>
-                        <td className="text-right">$36,738</td>
-                      </tr>
-                      <tr>
-                        <td>Minerva Hooper</td>
-                        <td>Curaçao</td>
-                        <td>Sinaai-Waas</td>
-                        <td className="text-right">$23,789</td>
-                      </tr>
-                      <tr>
-                        <td>Sage Rodriguez</td>
-                        <td>Netherlands</td>
-                        <td>Baileux</td>
-                        <td className="text-right">$56,142</td>
-                      </tr>
-                      <tr>
-                        <td>Philip Chaney</td>
-                        <td>Korea, South</td>
-                        <td>Overland Park</td>
-                        <td className="text-right">$38,735</td>
-                      </tr>
-                      <tr>
-                        <td>Doris Greene</td>
-                        <td>Malawi</td>
-                        <td>Feldkirchen in Kärnten</td>
-                        <td className="text-right">$63,542</td>
-                      </tr>
-                      <tr>
-                        <td>Mason Porter</td>
-                        <td>Chile</td>
-                        <td>Gloucester</td>
-                        <td className="text-right">$78,615</td>
-                      </tr>
-                      <tr>
-                        <td>Jon Porter</td>
-                        <td>Portugal</td>
-                        <td>Gloucester</td>
-                        <td className="text-right">$98,615</td>
-                      </tr>
-                    </tbody>
-                  </Table>
-                </CardBody>
-              </Card>
-            </Col>*/}
+
           </Row>
         </div>
       </>
@@ -278,4 +203,4 @@ class Tables extends React.Component {
   }
 }
 
-export default Tables;
+export default Catalogos;

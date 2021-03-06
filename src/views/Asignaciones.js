@@ -30,7 +30,7 @@ import {
   Button,
 } from "reactstrap";
 
-class Tables extends React.Component {
+class Asignaciones extends React.Component {
   render() {
     return (
       <>
@@ -39,26 +39,28 @@ class Tables extends React.Component {
             <Col md="12">
               <Card>
                 <CardHeader>
-                  <CardTitle tag="h4">Listas Creadas  </CardTitle>
+                  <CardTitle tag="h4">Asignaciones de listas </CardTitle>
                   <Button color="primary">
-                    <i className="fa fa-plus"> </i>&nbsp;Nueva Lista
+                    <i className="fa fa-plus"> </i>&nbsp;Nueva Asignacion
                   </Button>
                 </CardHeader>
                 <CardBody>
                   <Table responsive>
                     <thead className="text-primary">
                       <tr>
-                        <th>Nombre</th>
-                        <th>Cantidad Reactivos</th>
+                        <th>Id</th>
+                        <th>Lista</th>
                         <th>Grupo</th>
+                        <th>Usuario</th>
                         <th className="text-right">Opciones</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
+                        <td>1</td>
                         <td>Lista 1</td>
-                        <td>20</td>
                         <td>Salud</td>
+                        <td>Carlos</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -72,9 +74,10 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
+                        <td>2</td>
                         <td>Lista 2</td>
-                        <td>14</td>
                         <td>Salud</td>
+                        <td>Alberto</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -88,9 +91,10 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
+                        <td>3</td>
                         <td>Lista 3</td>
-                        <td>24</td>
                         <td>Orden</td>
+                        <td>Juan</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -104,9 +108,10 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
+                        <td>4</td>
                         <td>Lista 4</td>
-                        <td>17</td>
                         <td>Orden</td>
+                        <td>Jesus</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -120,9 +125,10 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
+                        <td>5</td>
                         <td>Lista 5</td>
-                        <td>25</td>
                         <td>Mantenimiento</td>
+                        <td>Carlos</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -136,9 +142,10 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
+                        <td>6</td>
                         <td>Lista 6</td>
-                        <td>10</td>
                         <td>Mantenimiento</td>
+                        <td>Eduardo</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -152,9 +159,10 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
+                        <td>7</td>
                         <td>Lista 7</td>
-                        <td>15</td>
                         <td>Mantenimiento</td>
+                        <td>Angel</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -168,9 +176,10 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
+                        <td>8</td>
                         <td>Lista 8</td>
-                        <td>20</td>
                         <td>Salud</td>
+                        <td>Rodrigo</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -184,9 +193,10 @@ class Tables extends React.Component {
                         </td>
                       </tr>
                       <tr>
+                        <td>9</td>
                         <td>Lista 9</td>
-                        <td>20</td>
                         <td>Salud</td>
+                        <td>María</td>
                         <td className="text-right">
                           <Button size="sm" color="primary">
                             <i className="fa fa-edit"></i>
@@ -278,4 +288,4 @@ class Tables extends React.Component {
   }
 }
 
-export default Tables;
+export default Asignaciones;

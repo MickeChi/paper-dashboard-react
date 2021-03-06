@@ -24,61 +24,92 @@ import TableList from "views/Tables.js";
 import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
+import Asignaciones from "views/Asignaciones";
+import Usuarios from "views/Usuarios";
+import Reportes from "views/Reportes";
+import MisListas from "views/MisListas";
+import DetallesAsignacionLista from "./views/DetallesAsignacionLista";
+import Catalogos from "./views/Catalogos";
+import EjecucionLista from "./views/EjecucionLista";
+
 
 var routes = [
   {
     path: "/dashboard",
     name: "Dashboard",
-    icon: "nc-icon nc-bank",
+    icon: "nc-icon nc-layout-11",
     component: Dashboard,
     layout: "/admin",
   },
   {
-    path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-diamond",
-    component: Icons,
-    layout: "/admin",
-  },
-  {
-    path: "/maps",
-    name: "Maps",
-    icon: "nc-icon nc-pin-3",
-    component: Maps,
-    layout: "/admin",
-  },
-  {
-    path: "/notifications",
-    name: "Notifications",
-    icon: "nc-icon nc-bell-55",
-    component: Notifications,
-    layout: "/admin",
-  },
-  {
-    path: "/user-page",
-    name: "User Profile",
-    icon: "nc-icon nc-single-02",
-    component: UserPage,
-    layout: "/admin",
-  },
-  {
     path: "/tables",
-    name: "Table List",
+    name: "Listados",
     icon: "nc-icon nc-tile-56",
     component: TableList,
     layout: "/admin",
   },
   {
-    path: "/typography",
-    name: "Typography",
-    icon: "nc-icon nc-caps-small",
-    component: Typography,
+    path: "/notifications",
+    name: "Asignaciones",
+    icon: "nc-icon nc-tap-01",
+    component: Asignaciones,
     layout: "/admin",
   },
   {
+    path: "/user-page",
+    name: "Usuarios",
+    icon: "nc-icon nc-single-02",
+    component: Usuarios,
+    layout: "/admin",
+  },
+  {
+    path: "/typography",
+    name: "Catálogos",
+    icon: "nc-icon nc-box",
+    component: Catalogos,
+    layout: "/admin",
+  },
+  {
+    path: "/ejecucion-lista",
+    name: "Ejecucion Lista",
+    icon: "nc-icon nc-box",
+    component: EjecucionLista,
+    layout: "/admin",
+    invisible: true
+  },
+  {
+    path: "/reportes",
+    name: "Reportes",
+    icon: "nc-icon nc-chart-bar-32",
+    component: Reportes,
+    layout: "/admin",
+  },
+  {
+    path: "/mis-listas",
+    name: "MisListas",
+    icon: "nc-icon nc-tile-56",
+    component: MisListas,
+    layout: "/admin",
+  },
+  {
+    path: "/detalles-asignacion-lista",
+    name: "Detalles lista",
+    icon: "nc-icon nc-tile-56",
+    component: DetallesAsignacionLista,
+    layout: "/admin",
+    invisible: true
+  },
+ /* {
+    path: "/maps",
+    name: "Maps",
+    icon: "nc-icon nc-pin-3",
+    component: Maps,
+    layout: "/admin",
+  },*/
+  {
     pro: true,
     path: "/upgrade",
-    name: "Upgrade to PRO",
+    name: "Cerrar sesión",
     icon: "nc-icon nc-spaceship",
     component: UpgradeToPro,
     layout: "/admin",
