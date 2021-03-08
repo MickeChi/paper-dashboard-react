@@ -3007,7 +3007,8 @@ License - nucleoapp.com/license/
   .table .form-check label .form-check-sign::before,
   .table .form-check label .form-check-sign::after {
     top: -17px;
-    left: 4px; }
+    left: 4px;
+  }
 
 .table .btn {
   margin: 0; }

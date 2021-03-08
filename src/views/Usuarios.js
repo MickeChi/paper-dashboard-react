@@ -29,6 +29,7 @@ import {
   Col,
   Button,
 } from "reactstrap";
+import {Link} from "react-router-dom";
 
 class Usuarios extends React.Component {
   render() {
@@ -40,9 +41,11 @@ class Usuarios extends React.Component {
               <Card>
                 <CardHeader>
                   <CardTitle tag="h4">Usuarios </CardTitle>
+                  <Link to="/admin/crear-usuario" >
                   <Button color="primary">
                     <i className="fa fa-plus"> </i>&nbsp;Nuevo Usuario
                   </Button>
+                  </Link>
                 </CardHeader>
                 <CardBody>
                   <Table responsive>

@@ -29,6 +29,7 @@ import {
   Col,
   Button,
 } from "reactstrap";
+import {Link} from "react-router-dom";
 
 class Asignaciones extends React.Component {
   render() {
@@ -40,9 +41,12 @@ class Asignaciones extends React.Component {
               <Card>
                 <CardHeader>
                   <CardTitle tag="h4">Asignaciones de listas </CardTitle>
-                  <Button color="primary">
-                    <i className="fa fa-plus"> </i>&nbsp;Nueva Asignacion
-                  </Button>
+                  <Link to="/admin/crear-asignacion" >
+                    <Button color="primary">
+                      <i className="fa fa-plus"> </i>&nbsp;Nueva Asignacion
+                    </Button>
+                  </Link>
+
                 </CardHeader>
                 <CardBody>
                   <Table responsive>

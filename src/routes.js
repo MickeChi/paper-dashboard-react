@@ -20,7 +20,6 @@ import Dashboard from "views/Dashboard.js";
 import Notifications from "views/Notifications.js";
 import Icons from "views/Icons.js";
 import Typography from "views/Typography.js";
-import TableList from "views/Tables.js";
 import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
@@ -31,6 +30,9 @@ import MisListas from "views/MisListas";
 import DetallesAsignacionLista from "./views/DetallesAsignacionLista";
 import Catalogos from "./views/Catalogos";
 import EjecucionLista from "./views/EjecucionLista";
+import CrearLista from "./views/CrearLista";
+import Listados from "./views/Listados";
+import CrearAsignacion from "./views/CrearAsignacion";
 
 
 var routes = [
@@ -40,13 +42,15 @@ var routes = [
     icon: "nc-icon nc-layout-11",
     component: Dashboard,
     layout: "/admin",
+    invisible: true
   },
   {
-    path: "/tables",
+    path: "/listados",
     name: "Listados",
     icon: "nc-icon nc-tile-56",
-    component: TableList,
+    component: Listados,
     layout: "/admin",
+    invisible: true
   },
   {
     path: "/notifications",
@@ -54,13 +58,23 @@ var routes = [
     icon: "nc-icon nc-tap-01",
     component: Asignaciones,
     layout: "/admin",
+    invisible: true
   },
   {
-    path: "/user-page",
+    path: "/usuarios",
     name: "Usuarios",
     icon: "nc-icon nc-single-02",
     component: Usuarios,
     layout: "/admin",
+    invisible: true
+  },
+  {
+    path: "/crear-usuario",
+    name: "Crear usuario",
+    icon: "nc-icon nc-single-02",
+    component: UserPage,
+    layout: "/admin",
+    invisible: true
   },
   {
     path: "/typography",
@@ -68,6 +82,7 @@ var routes = [
     icon: "nc-icon nc-box",
     component: Catalogos,
     layout: "/admin",
+    invisible: true
   },
   {
     path: "/ejecucion-lista",
@@ -83,6 +98,7 @@ var routes = [
     icon: "nc-icon nc-chart-bar-32",
     component: Reportes,
     layout: "/admin",
+    invisible: true
   },
   {
     path: "/mis-listas",
@@ -96,6 +112,22 @@ var routes = [
     name: "Detalles lista",
     icon: "nc-icon nc-tile-56",
     component: DetallesAsignacionLista,
+    layout: "/admin",
+    invisible: true
+  },
+  {
+    path: "/crear-lista",
+    name: "Crear lista",
+    icon: "nc-icon nc-tile-56",
+    component: CrearLista,
+    layout: "/admin",
+    invisible: true
+  },
+  {
+    path: "/crear-asignacion",
+    name: "Crear asignacion",
+    icon: "nc-icon nc-tile-56",
+    component: CrearAsignacion,
     layout: "/admin",
     invisible: true
   },
